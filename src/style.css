@@ -2,15 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+* DarkBlue: #3E3084
+* Flieder: #7C2F82
+* Pink: #B22F7F
+* Violet: #543E71 
+* GreenBlue: #014967
+*
+*
+* Background: #222129
+*/
+
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Roboto, Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-image: url('./assets/swidge-background-16:9.jpg') ;
+  background-size: cover;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -91,4 +103,9 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.bg-img {
+  background-image: url('./assets/swidge-colours-background.jpg') ;
+  background-size: 1rem;
 }
