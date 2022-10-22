@@ -9,6 +9,6 @@ import ArchitectureSection from './components/ArchitectureSection.vue';
 
 <template>
   <SwidgeSection class="h-screen" />
-  <Carousel />
+  <Carousel class="h-screen" />
   <ArchitectureSection class="h-screen" />
 </template>

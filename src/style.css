@@ -107,7 +107,15 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+.flip {
+  transform: scale(-1, 1);
+}
 
+.why-swidge {
+  font-size: 1.25rem;
+  font-weight: 500;
+  font-family: Outfit;
+}
 .bg-img {
   background-image: url('./assets/swidge-background-16:9.jpg');
   background-size: cover;
@@ -116,9 +124,31 @@ button:focus-visible {
 .bg-dark {
   background-color: #222129;
   background-size: 1rem;
-  height: 100vh;
   width: 100%;
   padding: 0;
   margin: 0;
   box-sizing: content-box;
 }
+.table-bg-dark {
+  background-color: #222129;
+}
+
+
+/* Gardients */
+
+.gradient-main {
+  background: linear-gradient(270deg, #3E3085 0%, #7C2F82 27.15%, #B22F7F 51.04%, #543E71 78.86%, #0C4966 100%);
+}
+
+.bg-gradient-border {
+  background: linear-gradient(var(--bg-color-from), var(--bg-color-to)) padding-box,
+    linear-gradient(270deg, #3E3085 0%, #7C2F82 27.15%, #B22F7F 51.04%, #543E71 78.86%, #0C4966 100%) border-box;
+  border: 1.5px solid transparent;
+  border-radius: 12px;
+}
+
+ .gradient-border-selection-main {
+   background: linear-gradient(#31313E, #31313E) padding-box,
+     linear-gradient(270deg, #3E3085 0%, #7C2F82 27.15%, #B22F7F 51.04%, #543E71 78.86%, #0C4966 100%) border-box;
+   border: 1.5px solid transparent;
+ }
