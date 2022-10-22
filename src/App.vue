@@ -4,9 +4,11 @@
 import SwidgeSection from './components/SwidgeSection.vue';
 import CardSection from './components/CardSection.vue';
 import Carousel from './components/Carousel.vue'
+import ArchitectureSection from './components/ArchitectureSection.vue';
 </script>
 
 <template>
   <SwidgeSection class="h-screen" />
   <Carousel />
+  <ArchitectureSection class="h-screen" />
 </template>
