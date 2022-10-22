@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="flex flex-row content-baseline h-screen">
+    <div class="flex flex-row content-baseline h-screen bg-img">
         <div class="flex flex-row align-bottom">
             <div class="self-center">
                 <a href="https://swidge.xyz">
