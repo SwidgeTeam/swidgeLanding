@@ -3,6 +3,7 @@
 </script>
 
 <template>
-    <!-- TODO: Build the carousel logic -->
-
+    <div class="bg-dark w-full">
+        <div>Hello World!</div>
+    </div>
 </template>

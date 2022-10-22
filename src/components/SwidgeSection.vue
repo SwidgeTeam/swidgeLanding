@@ -3,31 +3,31 @@
 </script>
 
 <template>
-    <div class="flex">
-        <a href="https://swidge.xyz">
-            <img src="../assets/swidge-white.svg" class="logo" alt="Swidge logo" />
-        </a>
-    </div>
-    <div class="flex text-sm">
-        <h1 class="text-sm">
-            Decentralised, aggregated One-Click Liquidity
-        </h1>
-
+    <div class="flex flex-row content-baseline h-screen">
+        <div class="flex flex-row align-bottom">
+            <div class="self-center">
+                <a href="https://swidge.xyz">
+                    <img src="../assets/swidge-white.svg" class="logo" alt="Swidge logo" />
+                </a>
+            </div>
+            <div class="align-bottom self-center">
+                <h1 class="content-baseline">Decentralised, aggregated</h1>
+                <h1 class="">
+                    One-Click Liquidity
+                </h1>
+            </div>
+        </div>
     </div>
 </template>
 
 <style>
 .logo {
-    height: 6em;
+    height: 20em;
     padding: 1.5em;
     will-change: filter;
 }
 
 .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-}
-
-.logo.vue:hover {
-    filter: drop-shadow(0 0 2em #42b883aa);
+    filter: drop-shadow(0 0 2em #B22F7F);
 }
 </style>

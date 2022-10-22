@@ -51,7 +51,7 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
+  display: block;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
@@ -87,8 +87,8 @@ button:focus-visible {
 
 #app {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
@@ -108,4 +108,15 @@ button:focus-visible {
 .bg-img {
   background-image: url('./assets/swidge-colours-background.jpg') ;
   background-size: 1rem;
+  height: 100vh;
+}
+
+.bg-dark {
+  background-color: #222129;
+  background-size: 1rem;
+  height: 100vh;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
 }
