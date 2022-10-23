@@ -3,14 +3,14 @@
 </script>
 
 <template>
-    <div class="flex flex-row content-baseline w-full h-screen bg-img">
-        <div class="flex flex-row align-bottom">
-            <div class="self-center">
+    <div class="flex w-full items-center justify-center h-screen bg-img">
+        <div class="flex content-center">
+            <div class=" self-center">
                 <a href="https://swidge.xyz">
                     <img src="../assets/swidge-white.svg" class="logo" alt="Swidge logo" />
                 </a>
             </div>
-            <div class="align-bottom self-center">
+            <div class="self-center">
                 <h1 class="content-baseline">Decentralised, aggregated</h1>
                 <h1 class="">
                     One-Click Liquidity
@@ -22,12 +22,14 @@
 
 <style>
 .logo {
-    height: 20em;
+    height: 40em;
     padding: 1.5em;
     will-change: filter;
+    opacity: 0.6;
 }
 
 .logo:hover {
     filter: drop-shadow(0 0 2em #B22F7F);
+    opacity: 1;
 }
 </style>
