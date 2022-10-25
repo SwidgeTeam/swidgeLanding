@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import CardSection from './CardSection.vue';
+
 
 </script>
 
@@ -30,5 +32,8 @@
                 <div class="why-swidge table-cell text-left pl-6">\\ Why you should start with Swigde.</div>
             </div>
         </div>
+        <CardSection />
     </div>
+
+
 </template>

@@ -3,12 +3,12 @@
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import SwidgeSection from './components/SwidgeSection.vue';
 import CardSection from './components/CardSection.vue';
-import Carousel from './components/Carousel.vue'
 import ArchitectureSection from './components/ArchitectureSection.vue';
+import SwidgeSDKSection from './components/SwidgeSDKSection.vue';
 </script>
 
 <template>
   <SwidgeSection class="h-screen" />
-  <Carousel class="h-screen" />
+  <SwidgeSDKSection class="h-screen" />
   <ArchitectureSection class="h-screen" />
 </template>
