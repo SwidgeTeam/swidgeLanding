@@ -22,6 +22,8 @@ function _timer() {
                     <h1 class="word1">Decentralised</h1>
                 </Transition>
                 <h1>Aggregated</h1>
+                <!-- TODO: Make these Adjectives animated and transform in the same line -->
+
                 <h1 class="">
                     One-Click Liquidity
                 </h1>
@@ -30,7 +32,7 @@ function _timer() {
     </div>
 </template>
 
-<style>
+<style scoped>
 .logo {
     height: 40em;
     padding: 1.5em;

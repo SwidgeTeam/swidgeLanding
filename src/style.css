@@ -98,7 +98,6 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
     background-color: #ffffff;
   }
   a:hover {
@@ -113,8 +112,8 @@ button:focus-visible {
 }
 
 .why-swidge {
-  font-size: 1.25rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 600;
   font-family: Outfit;
 }
 .bg-img {
