@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import Carousel from './Carousel.vue';
+
 
 var timer = _timer;
 
@@ -28,7 +30,9 @@ function _timer() {
                     One-Click Liquidity
                 </h1>
             </div>
+            <!-- TODO: Build the Network logo banner witha flowing animation -->
         </div>
+        <!-- <Carousel></Carousel> -->
     </div>
 </template>
 
