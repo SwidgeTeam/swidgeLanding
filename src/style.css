@@ -118,6 +118,7 @@ button:focus-visible {
 }
 .bg-img {
   background-image: url('./assets/swidge-background-16:9.jpg');
+  width: 100%;
   background-size: cover;
 }
 

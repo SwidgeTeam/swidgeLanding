@@ -9,7 +9,7 @@ import Header from './components/Header.vue';
 
 <template>
   <Header class="h-20" />
-  <SwidgeSection class="h-80%" />
+  <SwidgeSection class="h-screen" />
   <CardSection />
   <ArchitectureSection class="h-screen" />
 </template>
