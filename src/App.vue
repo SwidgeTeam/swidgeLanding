@@ -5,6 +5,7 @@ import SwidgeSection from './components/SwidgeSection.vue';
 import ArchitectureSection from './components/ArchitectureSection.vue';
 import CardSection from './components/CardSection.vue';
 import Header from './components/Header.vue';
+import Footer from './components/Footer.vue';
 </script>
 
 <template>
@@ -12,4 +13,5 @@ import Header from './components/Header.vue';
   <SwidgeSection class="h-screen" />
   <CardSection />
   <ArchitectureSection class="h-screen" />
+  <Footer class="h-1/3"/>
 </template>

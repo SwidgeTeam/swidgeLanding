@@ -1,25 +1,60 @@
 <script lang="ts">
-import { fas } from '@fortawesome/free-solid-svg-icons'
+import { faS } from '@fortawesome/free-solid-svg-icons'
 import { far } from '@fortawesome/free-regular-svg-icons'
 
 export default {
     name: "navigation",
     data() {
         return {
-            scrollPosition: null,
+            scrolledNav: null,
             mobile: false,
-            mobileNav: null,
+            mobileNav: false,
             windowWidth: null,
-        }
-    }
-}
+        };
+    },
+    created() {
+        window.addEventListener('resize', this.checkScreen);
+        this.checkScreen();
+    },
+
+    mounted () {
+        window.addEventListener('scroll', this.updateScroll);
+        
+    },
+
+    methods: {
+        toggleMobileNav() {
+            this.mobileNav = !this.mobileNav;
+        },
+        
+        updateScroll() {
+            const scrollPosition = window.scrollY;
+            if (scrollPosition > 50) {
+                this.scrolledNav = true;
+                return;
+            }
+            this.scrolledNav = false ; 
+        },
+
+        checkScreen() {
+            this.windowWidth = window.innerWidth;
+            if (this.windowWidth <= 750) {
+                this.mobile=true; 
+                return;
+            }
+            this.mobile=false;
+            this.mobileNav=false; 
+            return;
+        },
+    },
+};
 </script>
 
 <template>
-    <header>
+    <header :class="{'scrolled-nav': scrolledNav}">
         <nav class="brand">
             <div>
-                <img src="../assets/swidge-white.svg" class="navIcon" alt="Swidge Logo">
+                <img href="./home" src="../assets/swidge-white.svg" class="navIcon" alt="Swidge Logo">
             </div>
             <ul v-show="!mobile" class="navigation">
                 <li>
@@ -31,13 +66,10 @@ export default {
                 <li>
                     <a class="link" href="#">Home</a>
                 </li>
-                <li><img src="../assets/discord-logo.png" href="https://discord.swidge.xyz/" class="socials"
-                        alt="Discord Logo Swidge Link"> </li>
-                <li><img src="../assets/twitter-logo-64.png" href="https://twitter.com/therealswidge" class="socials"
-                        alt="Discord Logo Swidge Link"></li>
+    
             </ul>
             <div class="icon">
-                <i @click="toggleMobileNav" v-show="mobile" class="fa far fa-bars"
+                <i @click="toggleMobileNav" v-show="mobile" class="far fa-bars" icon="fa-solid fa-bars"
                     :class="{ 'icon-active': mobileNav }"></i>
             </div>
             <Transition name="mobile-nav">
@@ -67,12 +99,13 @@ header {
     color: #fff;
 }
 
+
 nav {
     position: relative;
     display: flex;
     flex-direction: row;
     padding: 12px 0;
-    width: 90;
+    width: 90%;
     transition: 0.5s ease-in-out;
     margin: 0 auto;
 
@@ -147,4 +180,27 @@ li {
 .icon-active {
     transform: rotate(180deg);
 }
+
+.dropdown-nav {
+    display: flex;  
+    flex-direction: column;
+    position:fixed;
+    width: 100%;
+    max-width: 250px;
+    height: 100%;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+
+}
+.dropdown-nav li {
+        margin-left: 0;
+}
+
+.scrolled-nav {
+    background-color: black;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.8), 0 2px 4px -1px rgba(0, 0, 0, 0.6);
+}
+
+
 </style>
